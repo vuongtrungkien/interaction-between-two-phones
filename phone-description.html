@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phone description</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+<div class="phone">
+    <h2>Iphone</h2>
+    <input type="text" id="iphonex-msg" placeholder="Enter the message"/>
+    <br/>
+    <input type="button" onclick="phoneOn(iphonex)" value="Turn on the phone">
+    <input type="button" onclick="iphonex.turnOff()" value="Turn off the phone"/>
+    <input type="button" onclick="iphonex.checkStatus()" value="Status check"/>
+    <input type="button" onclick="IPcheckBatteryInfo()" value="Battery check"/>
+    <input type="button" onclick="sendMsg(iphonex,nokia)" value="Send message"/>
+    <input type="button" onclick="uotbox(iphonex)" value="Out box"/>
+    <input type="button" onclick="inbox(iphonex)" value="In box"/>
+    <input type="button" onclick="addbattery(battery)" value="charge battery"/>
+    <div class="display">
+        <p>In box</p>
+        <hr/>
+        <ul id="iphonex-inbox" class="display-msg">
+
+        </ul>
+
+    </div>
+    <div class="display">
+        <p>Out box</p>
+        <hr/>
+
+        <ul id="iphonex-outbox" class="display-msg">
+
+        </ul>
+    </div>
+
+</div>
+<div class="phone">
+    <h2>Nokia</h2>
+    <input type="text" id="nokia-msg" placeholder="Enter the message"/>
+    <br/>
+    <input type="button" onclick="phoneOn(nokia)" value="Turn on the phone"/>
+    <input type="button" onclick="nokia.turnOff()" value="Turn off the phone"/>
+    <input type="button" onclick="nokia.checkStatus()" value="Status check"/>
+    <input type="button" onclick="NKcheckBatteryInfo()" value="Battery check"/>
+    <input type="button" onclick="sendMsg(nokia,iphonex)" value="Send message"/>
+    <input type="button" onclick="uotbox(nokia)" value="Out box"/>
+    <input type="button" onclick="inbox(nokia)" value="In box"/>
+    <input type="button" onclick="addbattery(battery1)" value="charge battery"/>
+    <div class="display">
+        <p>In box</p>
+        <hr/>
+        <ul id="nokia-inbox" class="display-msg">
+
+        </ul>
+
+    </div>
+    <div class="display">
+        <p>Out box</p>
+        <hr/>
+        <ul id="nokia-outbox" class="display-msg">
+
+        </ul>
+    </div>
+</div>
+<div class="clear"></div>
+<script src="main.js"></script>
+</body>
+</html>
